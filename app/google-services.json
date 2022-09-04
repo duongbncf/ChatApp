@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "303072068481",
+    "firebase_url": "https://chatapplication-2e51f-default-rtdb.firebaseio.com",
+    "project_id": "chatapplication-2e51f",
+    "storage_bucket": "chatapplication-2e51f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303072068481:android:d49268461ca16e1d9d1e80",
+        "android_client_info": {
+          "package_name": "com.dungnd.mvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303072068481-91941rtibh2eo4c95oordthc2647tk7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3vmyOebBapZc5go6b8EWubfp7DeDOdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303072068481-91941rtibh2eo4c95oordthc2647tk7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue1"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/_24sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_back"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/poppinsemibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/register"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_30sdp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/add_image"
+                    android:textColor="@color/C4C4C4C4" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagView"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@drawable/background_image"
+                    app:riv_oval="true"
+                    android:scaleType="center"
+                    />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/edtName"
+                android:textColor="@color/C4C4C4C4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/background_input"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:drawablePadding="@dimen/_8sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:textColorHint="@color/C4C4C4C4"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtGmail"
+                android:layout_width="match_parent"
+                android:textColor="@color/C4C4C4C4"
+                android:drawablePadding="@dimen/_8sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/background_input"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_15sdp"
+                android:textColorHint="@color/C4C4C4C4"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/background_input"
+                android:drawableStart="@drawable/ic_key"
+                android:hint="@string/password"
+                android:drawablePadding="@dimen/_8sdp"
+                android:textColor="@color/C4C4C4C4"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/_15sdp"
+                android:textColorHint="@color/C4C4C4C4"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtPasswordAgain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/background_input"
+                android:drawableStart="@drawable/ic_key"
+                android:hint="@string/password_again"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/_15sdp"
+                android:drawablePadding="@dimen/_8sdp"
+                android:textColor="@color/C4C4C4C4"
+                android:textColorHint="@color/C4C4C4C4"
+                android:textSize="@dimen/_15sdp" />
+            <ProgressBar
+                android:id="@+id/progress_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:visibility="gone"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:backgroundTint="@color/Button"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_8sdp" />
+
+
+
+            <TextView
+                android:id="@+id/btnSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/sign_in"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</layout>

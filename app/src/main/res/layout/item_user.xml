@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/vAvatar"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/background_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="center"
+            app:riv_oval="true" />
+
+        <View
+            android:id="@+id/viewSupport"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_1sdp"
+            app:layout_constraintBottom_toBottomOf="@id/vAvatar"
+            app:layout_constraintStart_toEndOf="@id/vAvatar"
+            app:layout_constraintTop_toTopOf="@+id/vAvatar" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="314dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:maxLines="1"
+            android:fontFamily="@font/poppinsemibold"
+            android:text="Hoàng Dương"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="@id/viewSupport"
+            app:layout_constraintBottom_toBottomOf="@id/viewSupport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/vAvatar"
+
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
